@@ -3,11 +3,6 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },
-  
-  {
     path: 'ingreso',
     loadChildren: () => import('./pages/ingreso/ingreso.module').then( m => m.IngresoPageModule)
   },
@@ -31,16 +26,21 @@ const routes: Routes = [
     path: 'miclase',
     loadChildren: () => import('./pages/miclase/miclase.module').then( m => m.MiclasePageModule)
   },
+
   {
-    path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
+
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: '',
     pathMatch: 'full'
   },
+
 ];
+
+
 
 @NgModule({
   imports: [
