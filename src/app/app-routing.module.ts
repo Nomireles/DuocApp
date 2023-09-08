@@ -4,36 +4,36 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   
   {
     path: 'ingreso',
-    loadChildren: () => import('./ingreso/ingreso.module').then( m => m.IngresoPageModule)
+    loadChildren: () => import('./pages/ingreso/ingreso.module').then( m => m.IngresoPageModule)
   },
   {
     path: 'correo',
-    loadChildren: () => import('./correo/correo.module').then( m => m.CorreoPageModule)
+    loadChildren: () => import('./pages/correo/correo.module').then( m => m.CorreoPageModule)
   },
   {
     path: 'pregunta',
-    loadChildren: () => import('./pregunta/pregunta.module').then( m => m.PreguntaPageModule)
+    loadChildren: () => import('./pages/pregunta/pregunta.module').then( m => m.PreguntaPageModule)
   },
   {
     path: 'correcto',
-    loadChildren: () => import('./correcto/correcto.module').then( m => m.CorrectoPageModule)
+    loadChildren: () => import('./pages/correcto/correcto.module').then( m => m.CorrectoPageModule)
   },
   {
     path: 'incorrecto',
-    loadChildren: () => import('./incorrecto/incorrecto.module').then( m => m.IncorrectoPageModule)
+    loadChildren: () => import('./pages/incorrecto/incorrecto.module').then( m => m.IncorrectoPageModule)
   },
   {
     path: 'miclase',
-    loadChildren: () => import('./miclase/miclase.module').then( m => m.MiclasePageModule)
+    loadChildren: () => import('./pages/miclase/miclase.module').then( m => m.MiclasePageModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: '',
