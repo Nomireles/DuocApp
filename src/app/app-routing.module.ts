@@ -7,6 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+<<<<<<< Updated upstream
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -20,6 +21,8 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
+=======
+>>>>>>> Stashed changes
     path: 'ingreso',
     loadChildren: () => import('./ingreso/ingreso.module').then( m => m.IngresoPageModule)
   },
@@ -42,6 +45,15 @@ const routes: Routes = [
   {
     path: 'miclase',
     loadChildren: () => import('./miclase/miclase.module').then( m => m.MiclasePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
   },
 ];
 
