@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-miclase',
   templateUrl: './miclase.page.html',
   styleUrls: ['./miclase.page.scss'],
 })
-export class MiclasePage implements OnInit {
+export class MiclasePage {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {}
 
-  ngOnInit() {
+  redi_inicio() {
+    this.navCtrl.navigateForward('/inicio');
   }
 
+  redi_clase(){
+    this.navCtrl.navigateForward('/miclase');
+  }
 }

@@ -1,13 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>miclase</ion-title>
+    
+    <!--Barra de de botones-->
+    <div slot="start" class="animation-container">
+      <ion-button color="white" class="title-animation" fill="clear" (click)="redi_inicio()">Inicio</ion-button>
+      <ion-button color="white" class="title-animation" fill="clear" (click)="redi_clase()">Mi Clase</ion-button>
+    </div>
+
+    <!--Imagen-->
+    <div slot="end">
+      <img width="150px" src="assets/icon/logo-duoc.png" alt="Logo DUOC" class="image-animation">
+    </div>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">miclase</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+
+
+
+<!--Footer-->
+<ion-footer [translucent]="true">
+  <ion-toolbar class="footer-style">
+    <div slot="start">
+      <div class="footer-animation">
+        Sistema de asistencia DuocUc
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

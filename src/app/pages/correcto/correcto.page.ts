@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-correcto',
   templateUrl: './correcto.page.html',
   styleUrls: ['./correcto.page.scss'],
 })
-export class CorrectoPage implements OnInit {
+export class CorrectoPage {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {}
 
-  ngOnInit() {
+  redi_inicio() {
+    this.navCtrl.navigateForward('/inicio');
+  }
+
+  redi_clase(){
+    this.navCtrl.navigateForward('/miclase');
   }
 
 }

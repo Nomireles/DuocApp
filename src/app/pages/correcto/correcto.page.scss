@@ -1,0 +1,36 @@
+.animation-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .title-animation {
+    color: white; /* Heredar el color de texto */
+    background-color: transparent; /* Fondo transparente */
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .image-animation {
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
